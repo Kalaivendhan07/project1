@@ -26,7 +26,7 @@ function Register() {
     } else {
       // Proceed with registration
       axios
-        .post("http://localhost:5000/api/register", { name, email, password })
+        .post("https://todo-api-d0mt.onrender.com/api/register", { name, email, password })
         .then(() => {
           alert("Registered successfully! Please login.");
           navigate("/");

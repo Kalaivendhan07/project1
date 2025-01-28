@@ -8,13 +8,13 @@ function TodoList() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/todos?userId=${userId}`)
+      .get(`https://todo-api-d0mt.onrender.com/api/todos?userId=${userId}`)
       .then((response) => setTodos(response.data));
   }, [userId]);
 
   const addTodo = () => {
     axios
-      .post("http://localhost:5000/api/todos", { userId, task })
+      .post("https://todo-api-d0mt.onrender.com/api/todos", { userId, task })
       .then(() => {
         setTodos((prev) => [...prev, { user_id: userId, task }]);
         setTask("");

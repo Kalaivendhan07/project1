@@ -28,13 +28,16 @@ const Login = ({ setIsAuthenticated }) => {
     }
 
         axios
-        .post("http://localhost:5000/api/login", { email, password })
+        .post("https://todo-api-d0mt.onrender.com/api/login", { email, password })
         .then((response) => {
         setIsAuthenticated(true);
         localStorage.setItem("userId", response.data.userId);
         navigate("/todo");
         })
         .catch((err) => alert("Invalid email or password"));
+
+        // setIsAuthenticated(true);
+        // navigate("/todo");
 
   };
 
