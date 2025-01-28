@@ -1,13 +1,26 @@
 /* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background: #f3f4f6;
+  background: #f3f4f6 url('../public/back.svg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container1 {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto; /* Centering the form */
+  text-align: center;
+  border: 2px solid #ddd; /* Border around the form */
 }
 
 /* Container */
@@ -30,13 +43,14 @@ h2 {
 
 /* Inputs */
 input {
-  width: 100%;
+  width: 85%;
   padding: 0.8rem;
   margin: 0.5rem 0;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 1rem;
   color: #374151;
+  text-align: center;
 }
 
 input:focus {
@@ -55,8 +69,14 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
-  width: 100%;
+  width: 20%;
   margin: 1rem 0;
+}
+
+button:disabled {
+  background-color: #aaa; /* Gray color for disabled state */
+  color: #333; /* Darker text for better visibility */
+  cursor: not-allowed; /* Change the cursor to indicate it's disabled */
 }
 
 button:hover {
