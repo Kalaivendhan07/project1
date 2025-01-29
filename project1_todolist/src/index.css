@@ -94,13 +94,13 @@ a:hover {
 }
 
 /* To-Do List Styles */
-.todo-container {
+/* .todo-container {
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
-}
+} */
 
-.todo-container h2 {
+/* .todo-container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -147,7 +147,7 @@ a:hover {
 
 .todo-container li button:hover {
   background: #dc2626;
-}
+} */
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
